@@ -1,13 +1,13 @@
 
 class script(object):
-    START_TXT = """<b><blockquote>Hello {} 👋🏻</blockquote>
+    START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}</blockquote>
 
-<blockquote>I Am Advance File Store Bot With Streaming & Downloading Feature.</blockquote></b>"""
+I Aᴍ Aᴅᴠᴀɴᴄᴇ Aɴᴅ Pᴏᴡᴇʀғᴜʟʟ Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ Wɪᴛʜ Aᴍᴀᴢɪɴɢ Fᴇᴀᴛᴜʀᴇs Jᴜsᴛ Sʜᴀʀᴇ Aɴʏ Vɪᴅᴇᴏ Oʀ Fɪʟᴇ Tʜᴇɴ Sᴇᴇ Mʏ Pᴏᴡᴇʀ 💘</b>"""
 
     
-    CAPTION = """<b>📂 FileName: {file_name}
+    CAPTION = """<b>📂 FɪʟᴇNᴀᴍᴇ: {file_name}
 
-⚙️ Size: {file_size}
+⚙️ Sɪᴢᴇ: {file_size}
 
 ✨ @FileStreamerBot</b>""" 
 
@@ -33,7 +33,9 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-    ABOUT_TXT = """<b>🤖 My Name: {}
+    ABOUT_TXT = """<b><blockquote>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
+
+🤖 My Name: {}
 📝 Language: <a href=https://www.python.org>Python3</a>
 📚 Library: <a href=https://docs.pyrogram.org>Pyrogram</a>
 🧑🏻‍💻 Developer: <a href=https://t.me/BackupRedirect>Expert Coder</a>
