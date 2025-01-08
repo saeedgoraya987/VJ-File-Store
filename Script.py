@@ -1,8 +1,8 @@
 
 class script(object):
-    START_TXT = """<b>Hello {} 👋🏻
+    START_TXT = """<b><blockquote>Hello {} 👋🏻</blockquote>
 
-I Am Advance File Store Bot With Streaming & Downloading Feature And Best UI Performance</b>"""
+<blockquote>I Am Advance File Store Bot With Streaming & Downloading Feature.</blockquote></b>"""
 
     
     CAPTION = """<b>📂 FileName: {file_name}
