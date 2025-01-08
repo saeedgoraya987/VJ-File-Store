@@ -41,13 +41,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/HackerDisscussion'),
-            InlineKeyboardButton('⌬ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/BackupRedirect')
+            InlineKeyboardButton('Gʀᴏᴜᴘ 🔇', url='https://t.me/HackerDisscussion'),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔊', url='https://t.me/BackupRedirect')
             ],[
-            InlineKeyboardButton('✇ Sᴜʙsᴄʀɪʙᴇ Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ ✇', url='https://youtube.com/@ZulfiqarAliGoraya4')
+            InlineKeyboardButton('⚡ Sᴜʙsᴄʀɪʙᴇ Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ ⚡', url='https://youtube.com/@ZulfiqarAliGoraya4')
             ],[
-            InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('Hᴇʟᴘ 🕸️', callback_data='help'),
+            InlineKeyboardButton('Aʙᴏᴜᴛ ✨', callback_data='about')
         ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
@@ -387,13 +387,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/HackerDisscussion'),
-            InlineKeyboardButton('⌬ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/BackupRedirect')
+            InlineKeyboardButton('Gʀᴏᴜᴘ 🔇', url='https://t.me/HackerDisscussion'),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔊', url='https://t.me/BackupRedirect')
             ],[
-            InlineKeyboardButton('✇ Sᴜʙsᴄʀɪʙᴇ Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ ✇', url='https://youtube.com/@ZulfiqarAliGoraya4')
+            InlineKeyboardButton('⚡ Sᴜʙsᴄʀɪʙᴇ Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ ⚡', url='https://youtube.com/@ZulfiqarAliGoraya4')
             ],[
-            InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('Hᴇʟᴘ 🕸️', callback_data='help'),
+            InlineKeyboardButton('Aʙᴏᴜᴛ ✨', callback_data='about')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
