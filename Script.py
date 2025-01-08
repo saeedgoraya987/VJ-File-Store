@@ -1,6 +1,6 @@
 
 class script(object):
-    START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}</blockquote>
+    START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}, Mʏ Nᴀᴍᴇ [File Streamer Bot 🖥️](https://t.me/FileStreamerBot)</blockquote>
 
 I Aᴍ Aᴅᴠᴀɴᴄᴇ Aɴᴅ Pᴏᴡᴇʀғᴜʟʟ Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ Wɪᴛʜ Aᴍᴀᴢɪɴɢ Fᴇᴀᴛᴜʀᴇs Jᴜsᴛ Sʜᴀʀᴇ Aɴʏ Vɪᴅᴇᴏ Oʀ Fɪʟᴇ Tʜᴇɴ Sᴇᴇ Mʏ Pᴏᴡᴇʀ 💘</b>"""
 
