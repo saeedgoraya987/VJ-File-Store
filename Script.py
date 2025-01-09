@@ -35,12 +35,13 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 
     ABOUT_TXT = """<b><blockquote>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
 
-🤖 My Name: {}
-📝 Language: <a href=https://www.python.org>Python3</a>
-📚 Library: <a href=https://docs.pyrogram.org>Pyrogram</a>
-🧑🏻‍💻 Developer: <a href=https://t.me/BackupRedirect>Expert Coder</a>
-👥 Support Group: <a href=https://t.me/HackerDisscussion>Hacker Disscussion</a>
-📢 Updates Channel: <a href=https://t.me/BackupRedirect>OP Hackz</a></b>
+‣ Mʏ Nᴀᴍᴇ: {}
+‣ Dᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/BackupRedirect'>Oᴡɴᴇʀ</a> 
+‣ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
+‣ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ3</a> 
+‣ Dᴀᴛᴀʙᴀsᴇ: <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ Dʙ</a> 
+‣ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://app.koyeb.com/'>Kᴏʏᴇʙ</a> 
+‣ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: ᴠ2.7.1 [Sᴛᴀʙʟᴇ]></b>
 """
 
     CABOUT_TXT = """<b>ʜɪ ɪ ᴀᴍ ᴘᴇʀᴍᴀɴᴇɴᴛ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ + ᴄᴜsᴛᴏᴍ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ɪᴛ ᴍᴇᴀɴs ᴀɴʏ ᴜsᴇʀ ᴄᴀɴ sᴇᴛ ʜɪs ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀɴᴅ + ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ.
