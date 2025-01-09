@@ -31,6 +31,7 @@ async def incoming_gen_link(bot, message):
     user_id = message.from_user.id
     user = await get_user(user_id)
     if WEBSITE_URL_MODE == True:
+        share_link2 = f"https://t.me/{username}?start={outstr}"
         share_link = f"{WEBSITE_URL}?FileStreamerBot={outstr}"
     else:
         share_link = f"https://t.me/{username}?start={outstr}"
