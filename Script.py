@@ -72,7 +72,8 @@ First Send /clone command then follow below steps.
 ᴛʜᴇɴ ɪ ᴀᴍ ᴛʀʏ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ᴄᴏᴘʏ ʙᴏᴛ ᴏғ ᴍᴇ ғᴏʀ ʏᴏᴜ ᴏɴʟʏ 😌</b>"""
 
 
-    HELP_TXT = """<b>💢 How To Use This Bot ☺️
+    HELP_TXT = """<b><blockquote>Hᴇʏ {}
+Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</blockquote>
 
 🔻 /link - Reply To A Video Or File To Get Shareable Link
 🔻 /batch - Send First & Last Post Link & Make Sure Bot Is Admin In Channel
@@ -82,7 +83,10 @@ Eg - /batch https://t.me/Op_HackZ/3 https://t.me/Op_HackZ/4
 🔻 /broadcast - Reply This Command To Message To Broadcast (Owner Only)</b>"""
 
 
-    CHELP_TXT = """<b>💢 Hᴏᴡ Tᴏ Usᴇ Tʜɪs Bᴏᴛ ☺️
+
+
+    CHELP_TXT = """<b><blockquote>Hᴇʏ {}
+Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</blockquote>
 
 🔻 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠɪᴅᴇᴏ ᴏʀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ sʜᴀʀᴀʙʟᴇ ʟɪɴᴋ
 
