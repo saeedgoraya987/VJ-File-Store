@@ -1,5 +1,3 @@
-
-
 import re
 from pyrogram import filters, Client, enums
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, UsernameInvalid, UsernameNotModified
@@ -40,7 +38,7 @@ async def incoming_gen_link(bot, message):
         short_link = await get_short_link(user, share_link)
         await message.reply(f"<b>⭕ Hᴇʀᴇ Is Yᴏᴜʀ Lɪɴᴋ: {short_link}</b>")
     else:
-        await message.reply(f"<b>⭕ Hᴇʀᴇ Is Yᴏᴜʀ Lɪɴᴋ: {share_link}</b>")
+        await message.reply(f"<b><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u>\n\n🔗 Sʜᴀʀᴇ: {share_link}\n\n🔗 Sʜᴀʀᴇ 2: {share_link2}</b>")
         
 
 @Client.on_message(filters.command(['link', 'plink']) & filters.create(allowed))
@@ -63,13 +61,14 @@ async def gen_link_s(bot, message):
     user = await get_user(user_id)
     if WEBSITE_URL_MODE == True:
         share_link = f"{WEBSITE_URL}?FileStreamerBot={outstr}"
+        share_link2 = f"https://t.me/{username}?start={outstr}"
     else:
         share_link = f"https://t.me/{username}?start={outstr}"
     if user["base_site"] and user["shortener_api"] != None:
         short_link = await get_short_link(user, share_link)
         await message.reply(f"<b>⭕ Hᴇʀᴇ Is Yᴏᴜʀ Lɪɴᴋ: {short_link}</b>")
     else:
-        await message.reply(f"<b>⭕ Hᴇʀᴇ Is Yᴏᴜʀ Lɪɴᴋ: {share_link}</b>")
+        await message.reply(f"<b><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u>\n\n🔗 Sʜᴀʀᴇ: {share_link}\n\n🔗 Sʜᴀʀᴇ 2: {share_link2}</b>")
 
 @Client.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
