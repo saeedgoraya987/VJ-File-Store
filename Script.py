@@ -11,27 +11,19 @@ I Aᴍ Aᴅᴠᴀɴᴄᴇ Aɴᴅ Pᴏᴡᴇʀғᴜʟʟ Fɪʟᴇ Sᴛᴏʀᴇ B�
 
 ✨ @FileStreamerBot</b>""" 
 
-    SHORTENER_API_MESSAGE = """<b>Tᴏ ᴀᴅᴅ ᴏʀ ᴜᴘᴅᴀᴛᴇ ʏᴏᴜʀ Sʜᴏʀᴛɴᴇʀ Wᴇʙsɪᴛᴇ API, /api (ᴀᴘɪ)
+    SHORTENER_API_MESSAGE = """<b>💭 Tᴏ Aᴅᴅ Oʀ Uᴘᴅᴀᴛᴇ Yᴏᴜʀ Sʜᴏʀᴛɴᴇʀ Wᴇʙsɪᴛᴇ Aᴘɪ
             
-<b>Ex: /api 𝟼LZǫ𝟾𝟻𝟷sXᴏғғғPHᴜɢɪKQǫ
+📍 Eɢ: `/api 𝟼LZǫ𝟾𝟻𝟷sXᴏғғғPHᴜɢɪKQǫ`
 
-<b>Cᴜʀʀᴇɴᴛ Wᴇʙsɪᴛᴇ: {base_site}
+⚓ Cᴜʀʀᴇɴᴛ Wᴇʙsɪᴛᴇ: `{base_site}`
 
-Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`
+⚓ Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ Aᴘɪ: `{shortener_api}`
 
-If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+🙃 Iғ Yᴏᴜ Wᴀɴᴛ Tᴏ Rᴇᴍᴏᴠᴇ Aᴘɪ Tʜᴇɴ Cᴏᴘʏ Tʜɪs Aɴᴅ Sᴇɴᴅ Tᴏ Bᴏᴛ - </b>`/api None`"""
 
     CLONE_START_TXT = """<b>Hᴇʟʟᴏ {},ᴍʏ ɴᴀᴍᴇ {},【ɪ ᴀᴍ ʟᴀᴛᴇꜱᴛ ᴀᴅᴠᴀɴᴄᴇᴅ】ᴀɴᴅ ᴘᴏᴡᴇʀꜰᴜʟ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ +├ᴄᴜꜱᴛᴏᴍ ᴜʀʟ ꜱʜᴏʀᴛɴᴇʀ ꜱᴜᴘᴘᴏʀᴛ┤+  ᢵᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ sᴜᴘᴘᴏʀᴛ ᢴ ᢾᴀɴᴅ ʙᴇꜱᴛ ᴜɪ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇᢿ
 
 ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ᴛʜᴇɴ ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ ғʀᴏᴍ ᴍʏ <a href=https://t.me/vj_botz>ᴘᴀʀᴇɴᴛ</a></b>"""
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
     ABOUT_TXT = """<b><blockquote>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
 
@@ -55,10 +47,6 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=tg://user?id={}>ᴅᴇᴠᴇʟᴏᴘᴇʀ</a></b>
 """
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
     CLONE_TXT = """<b>ʜᴇʟʟᴏ {} 👋
 
 First Send /clone command then follow below steps.
@@ -72,15 +60,14 @@ First Send /clone command then follow below steps.
 ᴛʜᴇɴ ɪ ᴀᴍ ᴛʀʏ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ᴄᴏᴘʏ ʙᴏᴛ ᴏғ ᴍᴇ ғᴏʀ ʏᴏᴜ ᴏɴʟʏ 😌</b>"""
 
 
-    HELP_TXT = """<b><blockquote>Hᴇʏ {}
-Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</blockquote>
+    HELP_TXT = """<b><blockquote>⍟───[ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs ]───⍟</blockquote>
 
-🔻 /link - Reply To A Video Or File To Get Shareable Link
-🔻 /batch - Send First & Last Post Link & Make Sure Bot Is Admin In Channel
-Eg - /batch https://t.me/Op_HackZ/3 https://t.me/Op_HackZ/4
-🔻 /base_site - Use This Command To Set Url Shortner Domain
-🔻 /api - Set Your Url Shortner Api
-🔻 /broadcast - Reply This Command To Message To Broadcast (Owner Only)</b>"""
+✯ /link - Rᴇᴘʟʏ Tᴏ A Vɪᴅᴇᴏ Oʀ Fɪʟᴇ Tᴏ Gᴇᴛ Sʜᴀʀᴇᴀʙʟᴇ Lɪɴᴋ.
+✯ /batch - Sᴇɴᴅ Fɪʀsᴛ & Lᴀsᴛ Pᴏsᴛ Lɪɴᴋ & Mᴀᴋᴇ Sᴜʀᴇ Bᴏᴛ Is Aᴅᴍɪɴ Iɴ Cʜᴀɴɴᴇʟ
+Eɢ - /batch https://t.me/Op_HackZ/3 https://t.me/Op_HackZ/4
+✯ /base_site - Sᴇᴛ Yᴏᴜʀ Cᴜsᴛᴏᴍ Uʀʟ Sʜᴏʀᴛɴᴇʀ Dᴏᴍᴀɪɴ
+✯ /api - Sᴇᴛ Yᴏᴜʀ Uʀʟ Sʜᴏʀᴛɴᴇʀ Aᴘɪ
+✯ /broadcast - Rᴇᴘʟʏ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Mᴇssᴀɢᴇ Tᴏ Bʀᴏᴀᴅᴄᴀsᴛ (Oᴡɴᴇʀ Oɴʟʏ)</b>"""
 
 
 
