@@ -10,17 +10,6 @@ import json
 import base64
 import logging
 from plugins.users_api import get_user, update_user_info
-from plugins.database import get_file_details
-from pyrogram.errors import ChatAdminRequired, FloodWait
-from pyrogram.types import *
-from utils import verify_user, check_token, check_verification, get_token
-from config import *
-import re
-import json
-import base64
-from urllib.parse import quote_plus
-from TechVJ.utils.file_properties import get_name, get_hash, get_media_file_size
-logger = logging.getLogger(__name__)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -34,9 +23,7 @@ async def allowed(_, __, message):
 
 @Client.on_message((filters.document | filters.video | filters.audio) & filters.private & filters.create(allowed))
 async def incoming_gen_link(bot, message):
-    log_msg = await client.send_cached_media(
-                chat_id=LOG_CHANNEL,
-                file_id=file_id)
+    
     username = (await bot.get_me()).username
     file_type = message.media
     file_id, ref = unpack_new_file_id((getattr(message, file_type.value)).file_id)
@@ -48,8 +35,7 @@ async def incoming_gen_link(bot, message):
     if WEBSITE_URL_MODE == True:
         
         
-        stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        
         share_link2 = f"https://t.me/{username}?start={outstr}"
         share_link = f"{WEBSITE_URL}?FileStreamerBot={outstr}"
     else:
@@ -58,7 +44,7 @@ async def incoming_gen_link(bot, message):
         short_link = await get_short_link(user, share_link)
         await message.reply(f"<b>⭕ Hᴇʀᴇ Is Yᴏᴜʀ Lɪɴᴋ: {short_link}</b>")
     else:
-        await message.reply(f"<b><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u>\n\n🔗 Sʜᴀʀᴇ: {share_link}\n\n🔗 Sʜᴀʀᴇ 2: {share_link2}\n\n{stream}\n\n{download}</b>")
+        await message.reply(f"<b><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u>\n\n🔗 Sʜᴀʀᴇ: {share_link}\n\n🔗 Sʜᴀʀᴇ 2: {share_link2}</b>")
         
 
 @Client.on_message(filters.command(['link', 'plink']) & filters.create(allowed))
@@ -79,15 +65,11 @@ async def gen_link_s(bot, message):
     outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
     user_id = message.from_user.id
     user = await get_user(user_id)
-    log_msg = await client.send_cached_media(
-                chat_id=LOG_CHANNEL,
-                file_id=file_id,
-    )
+    
     if WEBSITE_URL_MODE == True:
     
         
-        stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        
         share_link = f"{WEBSITE_URL}?FileStreamerBot={outstr}"
         share_link2 = f"https://t.me/{username}?start={outstr}"
     else:
@@ -96,7 +78,7 @@ async def gen_link_s(bot, message):
         short_link = await get_short_link(user, share_link)
         await message.reply(f"<b>⭕ Hᴇʀᴇ Is Yᴏᴜʀ Lɪɴᴋ: {short_link}</b>")
     else:
-        await message.reply(f"<b><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u>\n\n🔗 Sʜᴀʀᴇ: {share_link}\n\n🔗 Sʜᴀʀᴇ 2: {share_link2}\n\n{stream}\n\n{download}</b>")
+        await message.reply(f"<b><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u>\n\n🔗 Sʜᴀʀᴇ: {share_link}\n\n🔗 Sʜᴀʀᴇ 2: {share_link2}</b>")
 
 @Client.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
