@@ -1,4 +1,3 @@
-
 import os
 import logging
 import random
@@ -193,12 +192,8 @@ async def start(client, message):
                     await x.delete()
                 except:
                     pass
-            await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
+            await k.edit_text("<b>Yᴏᴜʀ Aʟʟ Fɪʟᴇs/Vɪᴅᴇᴏs Is Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ!!!</b>")
         return
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
     files_ = await get_file_details(file_id)           
     if not files_:
@@ -254,15 +249,11 @@ async def start(client, message):
                 except:
                     pass
                 await g.delete()
-                await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
+                await k.edit_text("<b>Yᴏᴜʀ Fɪʟᴇ/Vɪᴅᴇᴏ Is Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ!!!</b>")
             return
         except:
             pass
         return await message.reply('No such file exist.')
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
     
     files = files_[0]
     title = files.file_name
@@ -314,12 +305,8 @@ async def start(client, message):
             await x.delete()
         except:
             pass
-        await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")       
+        await k.edit_text("<b>Yᴏᴜʀ Aʟʟ Fɪʟᴇs/Vɪᴅᴇᴏs Is Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ!!!</b>")       
         
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 @Client.on_message(filters.command('api') & filters.private)
 async def shortener_api_handler(client, m: Message):
@@ -334,11 +321,7 @@ async def shortener_api_handler(client, m: Message):
     elif len(cmd) == 2:    
         api = cmd[1].strip()
         await update_user_info(user_id, {"shortener_api": api})
-        await m.reply("<b>Shortener API updated successfully to</b> " + api)
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+        await m.reply("<b>Sʜᴏʀᴛᴇɴᴇʀ Aᴘɪ Uᴘᴅᴀᴛᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ Tᴏ</b> " + api)
 
 @Client.on_message(filters.command("base_site") & filters.private)
 async def base_site_handler(client, m: Message):
@@ -352,16 +335,12 @@ async def base_site_handler(client, m: Message):
         base_site = cmd[1].strip()
         if base_site == None:
             await update_user_info(user_id, {"base_site": base_site})
-            return await m.reply("<b>Base Site updated successfully</b>")
+            return await m.reply("<b>Bᴀsᴇ Sɪᴛᴇ ᴜᴘᴅᴀᴛᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ</b>")
             
         if not domain(base_site):
             return await m.reply(text=text, disable_web_page_preview=True)
         await update_user_info(user_id, {"base_site": base_site})
-        await m.reply("<b>Base Site updated successfully</b>")
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+        await m.reply("<b>Bᴀsᴇ Sɪᴛᴇ ᴜᴘᴅᴀᴛᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ</b>")
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
@@ -369,8 +348,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('💤 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Hᴏᴍᴇ 💤', callback_data='start'),
+            InlineKeyboardButton('Cʟᴏsᴇ 🔒', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -408,15 +387,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
     
     elif query.data == "clone":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Hᴏᴍᴇ 💤', callback_data='start'),
+            InlineKeyboardButton('Cʟᴏsᴇ 🔒', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -429,15 +404,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )          
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Hᴏᴍᴇ 💤', callback_data='start'),
+            InlineKeyboardButton('Cʟᴏsᴇ 🔒', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -450,10 +421,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )  
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
     elif query.data.startswith("generate_stream_link"):
         _, file_id = query.data.split(":")
@@ -505,7 +472,3 @@ async def cb_handler(client: Client, query: CallbackQuery):
             print(e)  # print the error message
             await query.answer(f"☣something went wrong\n\n{e}", show_alert=True)
             return
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
